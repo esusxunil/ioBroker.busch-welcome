@@ -1,0 +1,105 @@
+{
+    "common": {
+        "name": "busch-welcome",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "首次出版"
+            }
+        },
+        "title": "Busch Jäger Welcome",
+        "titleLang": {
+            "en": "Busch Jäger Welcome",
+            "de": "Busch Jäger Welcome",
+            "ru": "Busch Jäger Welcome",
+            "pt": "Busch Jäger Welcome",
+            "nl": "Busch Jäger Welcome",
+            "fr": "Busch Jäger Welcome",
+            "it": "Busch Jäger Welcome",
+            "es": "Busch Jäger Welcome",
+            "pl": "Busch Jäger Welcome",
+            "zh-cn": "Busch Jäger Welcome"
+        },
+        "desc": {
+            "en": "Get the events and screenshots from https://my.busch-jaeger.de/ for Busch-Welcome doorbell.",
+            "de": "Get the events and screenshots from https://my.busch-jaeger.de/ for Busch-Welcome doorbell.",
+            "ru": "Get the events and screenshots from https://my.busch-jaeger.de/ for Busch-Welcome doorbell.",
+            "pt": "Get the events and screenshots from https://my.busch-jaeger.de/ for Busch-Welcome doorbell.",
+            "nl": "Get the events and screenshots from https://my.busch-jaeger.de/ for Busch-Welcome doorbell.",
+            "fr": "Get the events and screenshots from https://my.busch-jaeger.de/ for Busch-Welcome doorbell.",
+            "it": "Get the events and screenshots from https://my.busch-jaeger.de/ for Busch-Welcome doorbell.",
+            "es": "Get the events and screenshots from https://my.busch-jaeger.de/ for Busch-Welcome doorbell.",
+            "pl": "Get the events and screenshots from https://my.busch-jaeger.de/ for Busch-Welcome doorbell.",
+            "zh-cn": "Get the events and screenshots from https://my.busch-jaeger.de/ for Busch-Welcome doorbell."
+        },
+        "authors": ["Sebastian Geisel <sebastian.schnack@gmail.com>"],
+        "keywords": ["welcome", "free@home", "doorbell", "Busch Jäger"],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "icon": "busch-welcome.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/esusxunil/ioBroker.busch-welcome/main/admin/busch-welcome.png",
+        "readme": "https://github.com/esusxunil/ioBroker.busch-welcome/blob/main/README.md",
+        "loglevel": "info",
+        "mode": "daemon",
+        "type": "iot-systems",
+        "compact": true,
+        "connectionType": "cloud",
+        "dataSource": "poll",
+        "adminUI": {
+            "config": "json"
+        },
+        "dependencies": [
+            {
+                "js-controller": ">=3.3.22"
+            }
+        ],
+        "globalDependencies": [
+            {
+                "admin": ">=5.1.13"
+            }
+        ]
+    },
+    "native": {
+        "Username": "",
+        "Password": "",
+        "ClientId": "",
+        "URL": "my.busch-jaeger.de",
+        "DoorCall": "",
+        "DoorSensor": ""
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "Device or service connected",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
+    ]
+}

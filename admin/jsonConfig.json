@@ -1,0 +1,36 @@
+{
+    "i18n": true,
+    "type": "panel",
+    "items": {
+        "Username": {
+            "type": "text",
+            "label": "Username for my.busch-jaeger.de",
+            "newLine": true
+        },
+        "Password": {
+            "type": "text",
+            "label": "Password for my.busch-jaeger.de",
+            "newLine": true
+        },
+        "ClientId": {
+            "type": "text",
+            "label": "ClientId for my.busch-jaeger.de",
+            "newLine": true
+        },
+        "URL": {
+            "type": "text",
+            "label": "Only if not my.busch-jaeger.de",
+            "newLine": true
+        },
+        "DoorCall": {
+            "type": "text",
+            "label": "Sensor for Door Call",
+            "newLine": true
+        },
+        "DoorSensor": {
+            "type": "text",
+            "label": "Sensor for Door (open/close)",
+            "newLine": true
+        }
+    }
+}

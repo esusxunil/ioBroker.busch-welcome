@@ -1,0 +1,9 @@
+{
+    "busch-welcome adapter settings": "Configurações do adaptador para busch-welcome",
+    "Username": "Username for my.busch-jaeger.de",
+    "Password": "Password for my.busch-jaeger.de",
+    "ClientId": "ClientId for my.busch-jaeger.de",
+    "URL": "Only if not my.busch-jaeger.de",
+    "DoorCall": "Sensor for Door Call",
+    "DoorSensor": "Sensor for Door (open/close)"
+}
